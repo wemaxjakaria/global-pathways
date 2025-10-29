@@ -22,7 +22,7 @@ jobs:
 
       # 3️⃣ Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm ci -f
 
       # 4️⃣ Build Globla Pathways app
       - name: Build Globla Pathways
