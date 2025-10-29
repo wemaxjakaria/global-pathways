@@ -51,9 +51,8 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             set -e
-            cd /var/www/
-            rm -rf global-pathways
-            mkdir global-pathways
-            tar -xzf global-pathways-build.tar.gz -C global-pathways/
+            cd ~/var/www/global-pathways
+            tar -xzf global-pathways-build.tar.gz
+            rm global-pathways-build.tar.gz
             rm -f global-pathways-build.tar.gz
             sudo systemctl restart nginx.service
