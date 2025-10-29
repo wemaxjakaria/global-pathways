@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/route.png',
-    shortcut: '/route.png',
-    apple: '/route.png',
+    icon: '/globe.png',
+    shortcut: '/globe.png',
+    apple: '/globe.png',
   },
 }
 
