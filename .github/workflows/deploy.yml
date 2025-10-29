@@ -52,11 +52,8 @@ jobs:
           script: |
             set -e
             cd /var/www/
-            if [ -d "global-pathways" ]; then
-                rm -rf global-pathways
-            fi
+            rm -rf global-pathways
             mkdir global-pathways
-            cd global-pathways
-            tar -xzf global-pathways-build.tar.gz
-            rm global-pathways-build.tar.gz
+            tar -xzf global-pathways-build.tar.gz -C global-pathways/
+            rm -f global-pathways-build.tar.gz
             sudo systemctl restart nginx.service
